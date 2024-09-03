@@ -17,6 +17,9 @@ export default () => {
     <div className="constructor">
       <div className="constructor-header">
         <Title weight={"1"}>{list[typetoilet].name}</Title>
+        <div className="constructor-info">
+          <IconButton mode="plain">{Icons("save")}</IconButton>
+        </div>
         <div className="constructor-save">
           <IconButton mode="plain">{Icons("save")}</IconButton>
         </div>

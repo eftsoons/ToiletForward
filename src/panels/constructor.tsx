@@ -14,7 +14,7 @@ export default () => {
         style={{ padding: "10px" }}
       >
         <ConstructorWindow />
-        <InlineButtons style={{ marginBottom: "15vh" }}>
+        <InlineButtons style={{ marginTop: "15vh" }}>
           <InlineButtonsItem
             mode={"bezeled"}
             style={{ minWidth: "0" }}
