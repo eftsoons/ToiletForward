@@ -33,7 +33,7 @@ export default () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            src={`${list[typetoilet].img}`}
+            src={list[typetoilet].img}
             style={{ borderRadius: "10px" }}
           />
         </div>
