@@ -1,0 +1,6 @@
+/mini-apps/backend/node_modules
+/mini-apps/backend/.env
+/mini-apps/fronted/node_modules
+/mini-apps/fronted/public
+/mini-apps/fronted2/node_modules
+/mini-apps/fronted2/public

@@ -1,0 +1,18 @@
+@import "./fonts/fonts.scss";
+@import "./panels/constructor-window.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  user-select: none;
+}
+
+body {
+  background-color: var(--tg-theme-bg-color);
+}
+
+.icon {
+  font-family: tgico;
+  font-size: 1.5rem;
+}
