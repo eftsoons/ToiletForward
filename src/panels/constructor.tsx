@@ -14,16 +14,35 @@ export default () => {
         style={{ padding: "10px" }}
       >
         <ConstructorWindow />
-        <InlineButtons style={{ marginBottom: "16vh", minWidth: "0" }}>
-          <InlineButtonsItem mode={"bezeled"} text="Каркас">
+        <InlineButtons style={{ marginBottom: "15vh" }}>
+          <InlineButtonsItem
+            mode={"bezeled"}
+            style={{ minWidth: "0" }}
+            text="Облицовка"
+          >
             ?
           </InlineButtonsItem>
-          <InlineButtonsItem mode={"bezeled"} text="Душ">
+          <InlineButtonsItem
+            mode={"bezeled"}
+            style={{ minWidth: "0" }}
+            text="Внутренняя отделка"
+          >
             ?
           </InlineButtonsItem>
-          <InlineButtonsItem mode={"bezeled"}></InlineButtonsItem>
-          <InlineButtonsItem mode={"bezeled"}></InlineButtonsItem>
-          <InlineButtonsItem mode={"bezeled"}></InlineButtonsItem>
+          <InlineButtonsItem
+            mode={"bezeled"}
+            style={{ minWidth: "0" }}
+            text="Душ"
+          >
+            ?
+          </InlineButtonsItem>
+          <InlineButtonsItem
+            mode={"bezeled"}
+            style={{ minWidth: "0" }}
+            text="Доп. Опции"
+          >
+            ?
+          </InlineButtonsItem>
         </InlineButtons>
       </motion.div>
     </AnimatePresence>
