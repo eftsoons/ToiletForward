@@ -73,7 +73,12 @@ function App() {
         )}
       </List>
 
-      <Tabbar style={{ zIndex: "1" }}>
+      <Tabbar
+        style={{
+          zIndex: "1",
+          paddingBottom: "var(--tgui--safe_area_inset_bottom)",
+        }}
+      >
         <Tabbar.Item
           id="main"
           text={"Главная"}
