@@ -3,7 +3,17 @@ import { InlineButtonsItem } from "@telegram-apps/telegram-ui/dist/components/Bl
 import { AnimatePresence, motion } from "framer-motion";
 
 import { ConstructorWindow } from "../components";
-export default () => {
+export default ({
+  list,
+  typetoilet,
+  settypetoilet,
+  setpanels,
+}: {
+  list: Array<{ name: string; img: string }>;
+  typetoilet: number;
+  settypetoilet: Function;
+  setpanels: Function;
+}) => {
   return (
     <AnimatePresence>
       <motion.div
@@ -13,8 +23,13 @@ export default () => {
         transition={{ duration: 0.5 }}
         style={{ padding: "10px" }}
       >
-        <ConstructorWindow />
-        <InlineButtons style={{ marginTop: "2.5vh", marginBottom: "14vh" }}>
+        <ConstructorWindow
+          list={list}
+          typetoilet={typetoilet}
+          settypetoilet={settypetoilet}
+          setpanels={setpanels}
+        />
+        <InlineButtons style={{ marginTop: "2.5vh", marginBottom: "15vh" }}>
           <InlineButtonsItem
             mode={"bezeled"}
             style={{ minWidth: "0" }}

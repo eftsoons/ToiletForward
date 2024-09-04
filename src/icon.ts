@@ -4,4 +4,5 @@ export default {
   cabinet: "e942",
   left: "e978",
   save: "e9e9",
+  info: "e970",
 };

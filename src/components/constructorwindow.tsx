@@ -1,24 +1,27 @@
 import { IconButton, Title } from "@telegram-apps/telegram-ui";
-import { useState } from "react";
 
 import { Icons } from "./";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default () => {
-  const list = [
-    { name: "Туалет PRO MAX", img: "toilet1.jpg" },
-    { name: "Туалет PRO MAX2", img: "toilet2.jpg" },
-    { name: "Туалет PRO MAX3", img: "toilet3.jpg" },
-  ];
-
-  const [typetoilet, settypetoilet] = useState(0);
-
+export default ({
+  list,
+  typetoilet,
+  settypetoilet,
+  setpanels,
+}: {
+  list: Array<{ name: string; img: string }>;
+  typetoilet: number;
+  settypetoilet: Function;
+  setpanels: Function;
+}) => {
   return (
     <div className="constructor">
       <div className="constructor-header">
         <Title weight={"1"}>{list[typetoilet].name}</Title>
         <div className="constructor-info">
-          <IconButton mode="plain">{Icons("save")}</IconButton>
+          <IconButton mode="plain" onClick={() => setpanels("info")}>
+            {Icons("info")}
+          </IconButton>
         </div>
         <div className="constructor-save">
           <IconButton mode="plain">{Icons("save")}</IconButton>

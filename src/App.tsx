@@ -12,10 +12,18 @@ import { AppRoot, List, Tabbar } from "@telegram-apps/telegram-ui";
 import { useEffect, useState } from "react";
 
 import Icons from "./components/icon";
-import { Main, Constructor, Cabinet } from "./panels";
+import { Main, Constructor, Cabinet, Info } from "./panels";
 
 function App() {
   const [panels, setpanels] = useState("main");
+
+  const list = [
+    { name: "Туалет PRO MAX", img: "toilet1.jpg" },
+    { name: "Туалет PRO MAX2", img: "toilet2.jpg" },
+    { name: "Туалет PRO MAX3", img: "toilet3.jpg" },
+  ];
+
+  const [typetoilet, settypetoilet] = useState(0);
 
   const lp = useLaunchParams();
   const miniApp = useMiniApp();
@@ -50,9 +58,16 @@ function App() {
         {panels == "main" ? (
           <Main />
         ) : panels == "constructor" ? (
-          <Constructor />
-        ) : (
+          <Constructor
+            list={list}
+            typetoilet={typetoilet}
+            settypetoilet={settypetoilet}
+            setpanels={setpanels}
+          />
+        ) : panels == "cabinet" ? (
           <Cabinet />
+        ) : (
+          <Info list={list} typetoilet={typetoilet} setpanels={setpanels} />
         )}
       </List>
 
