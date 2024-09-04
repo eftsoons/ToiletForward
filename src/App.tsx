@@ -76,7 +76,7 @@ function App() {
       <Tabbar
         style={{
           zIndex: "1",
-          paddingBottom: "var(--tgui--safe_area_inset_bottom)",
+          paddingBottom: ["macos", "ios"].includes(lp.platform) ? "500px" : "0",
         }}
       >
         <Tabbar.Item
