@@ -18,9 +18,11 @@ function App() {
   const [panels, setpanels] = useState("main");
 
   const list = [
-    { name: "Туалет PRO MAX", img: "toilet1.jpg" },
-    { name: "Туалет PRO MAX2", img: "toilet2.jpg" },
-    { name: "Туалет PRO MAX3", img: "toilet3.jpg" },
+    { name: "Туалет PRO MAX", img: "toilet3.png" },
+    { name: "Туалет PRO MAX2", img: "toilet4.png" },
+    { name: "Туалет PRO MAX3", img: "toilet5.png" },
+    { name: "Туалет PRO MAX4", img: "toilet7.png" },
+    { name: "Туалет PRO MAX5", img: "toilet6.png" },
   ];
 
   const [typetoilet, settypetoilet] = useState(0);
