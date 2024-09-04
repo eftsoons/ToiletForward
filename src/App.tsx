@@ -76,7 +76,9 @@ function App() {
       <Tabbar
         style={{
           zIndex: "1",
-          paddingBottom: ["macos", "ios"].includes(lp.platform) ? "1rem" : "0",
+          paddingBottom: ["macos", "ios"].includes(lp.platform)
+            ? "1.5rem"
+            : "0",
         }}
       >
         <Tabbar.Item
