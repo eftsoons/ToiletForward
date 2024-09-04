@@ -29,7 +29,7 @@ export default ({
           settypetoilet={settypetoilet}
           setpanels={setpanels}
         />
-        <InlineButtons style={{ marginTop: "2.5vh", marginBottom: "15vh" }}>
+        <InlineButtons style={{ marginTop: "2.5vh", marginBottom: "30%" }}>
           <InlineButtonsItem
             mode={"bezeled"}
             style={{ minWidth: "0" }}
