@@ -9,13 +9,13 @@
 }
 
 body {
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   background-color: var(--tg-theme-bg-color);
 }
 
 #root {
-  height: 120%;
+  height: 100%;
   overflow-y: scroll;
 }
 
